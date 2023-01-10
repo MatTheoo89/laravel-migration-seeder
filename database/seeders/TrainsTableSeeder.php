@@ -36,7 +36,7 @@ class TrainsTableSeeder extends Seeder
             $new_train->Departure_time = $faker->time();
             $new_train->Arrival_time = $faker->time();
             $new_train->Code_train = $faker->bothify('??-##-####?##?-###');
-            $new_train->Number_carriages = $faker->bothify('##');
+            $new_train->Number_carriages = $faker->bothify('?##');
             $new_train->is_inTime = $faker->randomFloat(0, 0, 1);
             //dump($new_train);
             $new_train->save();
